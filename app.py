@@ -5,7 +5,7 @@ import openai
 app = Flask(__name__)
 
 # Lấy API Key từ biến môi trường Render
-openai.api_key = os.environ.get("OPENAI_API_KEY")
+openai.api_key = os.environ.get("sk-...p04A")
 
 # Route test
 @app.route("/")
@@ -40,3 +40,4 @@ def ask():
 if __name__ == "__main__":
     port = int(os.environ.get("PORT", 5000))
     app.run(host="0.0.0.0", port=port)
+
